@@ -4,7 +4,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {changetop} from '../modules/brain';
-import Homepart2 from './Homepart2';
+import Photos from './Photos';
 import Videos from './Videos';
 import Music from './Music';
 
@@ -31,7 +31,7 @@ class Home extends Component {
 
 	render(){
 		return(
-			<div className="home-container">
+			<div className="home-container" id="home">
 				
 			<div className="bigbrand">
 				<div className={ this.props.isTop ? "brandname" : "brandname up" } >THE</div>
@@ -41,7 +41,7 @@ class Home extends Component {
 
 			<Music />
 			
-			<Homepart2 />
+			<Photos />
 
 			<Videos />
 

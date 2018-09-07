@@ -26,7 +26,7 @@ class Videos extends Component{
 
     return (
   <ScrollAnimation animateIn="fadeInUp" offset={50} duration={1}>
-      <div className="red">
+      <div className="red" id="video">
           <ScrollAnimation animateIn="fadeInDown" duration={1}>
         <p className="heads">VIDEO</p>
         </ScrollAnimation>

@@ -1,10 +1,11 @@
 import React , {Component} from 'react';
-import { Route, NavLink, HashRouter } from 'react-router-dom';
+import { Route, HashRouter } from 'react-router-dom';
 import Home from './Home';
 import Bar from './Bar';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {activetoggle , menuon , menuoff } from '../modules/brain';
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 import '../App.css';
 
 
@@ -49,9 +50,10 @@ class App extends Component{
 
       <div className={ this.props.active ? "menubody not-visible" : "menubody visible" } id={this.props.hidden ? "hidden" : null } >
         <ul>
-          <li className={ this.props.active ? "menu-item-fade-out1" : "menu-item-fade-in1" } onClick={ this.handleClick } ><NavLink to="/home">Home</NavLink></li>
-          <li className={ this.props.active ? "menu-item-fade-out2" : "menu-item-fade-in2" } onClick={ this.handleClick } ><NavLink to="/about">About Us</NavLink></li>
-          <li className={ this.props.active ? "menu-item-fade-out3" : "menu-item-fade-in3" } onClick={ this.handleClick } ><NavLink to="/about">Merchandise</NavLink></li>
+          <li className={ this.props.active ? "menu-item-fade-out1" : "menu-item-fade-in1" } onClick={ this.handleClick } ><NavLink activeClassName="active" to="/home#home"   smooth={true} duration={500}  >Home</NavLink></li>
+          <li className={ this.props.active ? "menu-item-fade-out3" : "menu-item-fade-in3" } onClick={ this.handleClick } ><NavLink activeClassName="active" to="/home#gallery"   smooth={true} duration={500}  >Photos</NavLink></li>
+          <li className={ this.props.active ? "menu-item-fade-out2" : "menu-item-fade-in2" } onClick={ this.handleClick } ><NavLink activeClassName="active" to="/home#music"   smooth={true} duration={500}  >Music</NavLink></li>
+          <li className={ this.props.active ? "menu-item-fade-out3" : "menu-item-fade-in3" } onClick={ this.handleClick } ><NavLink activeClassName="active" to="/home#video"   smooth={true} duration={500}  >Video</NavLink></li>
 
         </ul>
 

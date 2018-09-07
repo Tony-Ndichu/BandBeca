@@ -2,8 +2,8 @@
   "name": "tee",
   "version": "0.1.0",
   "private": true,
-  "engines" : {
-    "npm" : "5.5.1",
+  "engines": {
+    "npm": "5.5.1",
     "node": "9.3.0"
   },
   "dependencies": {
@@ -30,6 +30,8 @@
     "react-router-hash-link": "^1.2.0",
     "react-router-redux": "^4.0.8",
     "react-scripts": "1.1.4",
+    "react-scroll": "^1.7.10",
+    "react-slick": "^0.23.1",
     "react-transition-group": "^1.2.1",
     "react-youtube": "^7.6.0",
     "redux": "^4.0.0",

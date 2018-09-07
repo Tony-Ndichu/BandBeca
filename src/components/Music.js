@@ -38,7 +38,7 @@ class Music extends Component{
 	render(){
 		return(
 		<ScrollAnimation animateIn="fadeInUp" offset={50} duration={1}>
-			<div className="blue">
+			<div className="blue" id="music">
 			    <ScrollAnimation animateIn="fadeInDown" duration={1}>
 				<p className="heads">MUSIC</p>
 				</ScrollAnimation>
