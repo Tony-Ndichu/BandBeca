@@ -697,21 +697,21 @@
 }
 
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 768px) {
 
 .left-tube{
   display: block;
-  max-width:50%;
+  max-width:60%;
   float: left;
   margin: 0;
-  margin-left: 10%;
+  margin-left: 5%;
   overflow: auto;
 }
 
 .right-tube{
-  max-width:22%;
   display: block;
-  float: left;
+  float: right;
+  width:30%;
   margin: 0;
   overflow: auto;
 
@@ -928,3 +928,22 @@
 
 
 }
+
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+
+}
+
+/* Large devices (desktops, 992px and up */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+
+}
+  
